@@ -53,8 +53,7 @@ def get_file_from_directory(directory_path, file_name):
 
     # If the file is not found, return None
     return None
-
-# Replace these values with your actual directory path and file name
+#??????
 directory_path = "/path/to/your/directory"
 file_name = "your_file.txt"
 

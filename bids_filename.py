@@ -33,6 +33,10 @@ import os
 import datetime
 import pandas as pd 
 
+# you can set source and target directories here (or see comment at the end of module)
+src_dir = 'source_directory'
+tgt_dir = 'target_directory'
+
 bids_path = BIDSPath(subject='aliens9', session='payoff1', task='rocket1', acquisition='quicktutorial1', modality='raw', run='s20031', suffix='raw', extension='.iqdat')
 print(bids_path)
 
@@ -53,7 +57,7 @@ def get_file_from_directory(directory_path, file_name):
 
     # If the file is not found, return None
     return None
-#?????? 
+# see my comments at line 36 and end of module
 @GregKronberg-- Do I make it where you have to put in your files like this, or to grab it automatically? A little conufsed on how to get to grab like that
 directory_path = "/path/to/your/directory"
 file_name = "your_file.txt"
@@ -99,3 +103,22 @@ bids_file_name = converion_filename(given_filename)#input filename to bids
 new_file= open(input_file, "x")
 
 print("BIDS File Name:", bids_file_name)
+
+# how to accept arguments for source and target directories when this file is run as a script (you should read up on what this means)
+if __name__=='__main__':
+  # set src and tgt directory
+  src_dir = sys.argv[1]
+  tgt_dir = sys.argv[2]
+
+  # get files in each src and tgt
+
+  # iterate files in src directory
+    # get bids fields (subject, session,task version, etc.) from filenames/files
+
+    # create new bids filename
+
+    # check if src file is already in tgt directory
+
+    # if not copy new file to tgt
+
+  # check if filename

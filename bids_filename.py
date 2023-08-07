@@ -53,7 +53,8 @@ def get_file_from_directory(directory_path, file_name):
 
     # If the file is not found, return None
     return None
-#??????
+#?????? 
+@GregKronberg-- Do I make it where you have to put in your files like this, or to grab it automatically? A little conufsed on how to get to grab like that
 directory_path = "/path/to/your/directory"
 file_name = "your_file.txt"
 

@@ -1,5 +1,5 @@
 # os.listdir('directory_path') function
-@GregKronberg
+@GregKronberg line 24 i am unsure what condition to put
 # cd?
 # instructions: look at OS and create something where you can get a list of all the directories stored
 import os

@@ -14,7 +14,8 @@ for entry in allentries:
     #file_path= os.path.join(directory_path, entry)
     # check if file needs conversion based on specific conditions
     #if needs_conversion(entry):
-    #convert_file(file_path)
+    # try convert_file(file_path)
+      #except: breakpoints -- print file name to check the file 
     #else:
     #print("Skipping file: {}".format(file_path))
 # now go through the files in the directory make sure they are BIDS format- JACK

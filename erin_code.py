@@ -27,7 +27,7 @@ def needs_conversion(file_name):
     #Jacks code 
 
     # how flexible does our code have to be for differnet environments, can we assume that these people have the directories
-    #on their computers or would I need to code something to make a new directroy
+    #on their computers or would I need to code something to make a new directroy-- assume they have a folder of raw data 
     
   # raw to converted, if file doesnt exist, if you dont have permission   
 import shutil
@@ -48,4 +48,8 @@ except Exception as e:
     print(f"An error occurred: {e}")
 
 # is jacks code check conversion internally or do I have to do that before it passes in
-# only accept files that need bids conversion
+# only accept files that need bids conversion-- yes, if its already converted then it would just keeo it the same 
+#mount datda_> unzipping the folder
+
+#run jacks code first, see if errors, try to fix them, how well does it work?
+#add comments to jack code 

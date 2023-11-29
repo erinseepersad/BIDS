@@ -29,3 +29,23 @@ def needs_conversion(file_name):
     # how flexible does our code have to be for differnet environments, can we assume that these people have the directories
     #on their computers or would I need to code something to make a new directroy
     
+  # raw to converted, if file doesnt exist, if you dont have permission   
+import shutil
+import os
+
+source_path = '/path/to/source/file.txt'
+destination_path = '/path/to/destination/'
+
+try:
+    # Move the file from the source directory to the destination directory
+    shutil.move(source_path, destination_path)
+    print(f"File moved successfully from {source_path} to {destination_path}")
+except FileNotFoundError:
+    print("Source file not found.")
+except PermissionError:
+    print("Permission error. Check if you have the necessary permissions.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# is jacks code check conversion internally or do I have to do that before it passes in
+# only accept files that need bids conversion

@@ -25,4 +25,7 @@ def needs_conversion(file_name):
     #what condition?
 # conversion
     #Jacks code 
+
+    # how flexible does our code have to be for differnet environments, can we assume that these people have the directories
+    #on their computers or would I need to code something to make a new directroy
     
